@@ -1,0 +1,53 @@
+QMainWindow {
+    background: #FAFAFA;
+}
+
+QWidget {
+    font-family: "SF Pro Display", "Inter", "Helvetica", sans-serif;
+    font-size: 14px;
+    color: #1F1F1F;
+}
+
+QPushButton {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #1F1F1F;
+}
+
+QPushButton:hover {
+    background: #F5F5F5;
+}
+
+QPushButton:pressed {
+    background: #EBEBEB;
+}
+
+QPlainTextEdit {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 12px;
+    selection-background-color: #DDEBFF;
+}
+
+QSplitter::handle {
+    background: #FAFAFA;
+    width: 2px;
+    margin: 2px 0;
+}
+
+QStatusBar {
+    background: #FFFFFF;
+    border-top: 1px solid #E5E5E5;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+QToolTip {
+    background: #FFFFFF;
+    color: #1F1F1F;
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+}
