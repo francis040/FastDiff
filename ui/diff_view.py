@@ -1,5 +1,5 @@
+ codex/generate-complete-fastdiff-python-project-chfzmr
 from typing import Dict, List, Optional, Tuple
-
 from PySide6.QtCore import QSize, Qt, Signal
 from PySide6.QtGui import QColor, QFont, QPainter, QTextCursor, QTextFormat
 from PySide6.QtWidgets import QHBoxLayout, QPlainTextEdit, QSizePolicy, QSplitter, QWidget
@@ -20,7 +20,9 @@ class LineNumberArea(QWidget):
 class DiffEditor(QPlainTextEdit):
     userEdited = Signal()
 
+    codex/generate-complete-fastdiff-python-project-chfzmr
     def __init__(self, parent: Optional[QWidget] = None) -> None:
+
         super().__init__(parent)
         self._updating = False
         self._line_metadata: Dict[int, Dict[str, object]] = {}
@@ -177,12 +179,16 @@ class QTextEditExtraSelectionFactory:
 class DiffView(QWidget):
     contentChanged = Signal()
 
+ codex/generate-complete-fastdiff-python-project-chfzmr
     def __init__(self, parent: Optional[QWidget] = None) -> None:
+
         super().__init__(parent)
         self.left_editor = DiffEditor()
         self.right_editor = DiffEditor()
         self._syncing_scroll = False
+ codex/generate-complete-fastdiff-python-project-chfzmr
         self._diff_positions: List[Tuple[Optional[int], Optional[int]]] = []
+
 
         splitter = QSplitter()
         splitter.addWidget(self.left_editor)
